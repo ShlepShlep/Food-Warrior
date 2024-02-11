@@ -61,13 +61,4 @@ public class SpawnFruit : MonoBehaviour
 
         }
     }
-
-    void SpawnFruits()
-    {
-        var prefab = Random.Range(0, 100) > bombChance ? fruits[Random.Range(0, fruits.Length)] : bombPrefab;
-
-        var obj = Instantiate(prefab);
-        var x = Random.Range(-6, 6);
-        obj.transform.position = new Vector3(x, -4.5f, 0);
-    }
 }
